@@ -1,0 +1,22 @@
+<form action="action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="../../assets/images/img_avatar2.png"style="width:250px;"  alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container col-md-3">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Kullanıcı Adı" name="uname" required [(ngModel)]="loginData.UserName">
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Şifre Giriniz" name="psw" required [(ngModel)]="loginData.Password">
+  
+      <button type="submit" (click)="login()">Login</button>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" routerLink="/orders" class="cancelbtn">Ana Sayfa</button>
+        <span class="psw"> <a href="#" routerLink="/register">Kayıt Ol</a></span>
+      </div>
+    </div>
+  
+   
+  </form>
